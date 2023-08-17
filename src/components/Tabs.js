@@ -2,8 +2,8 @@ import React, { useState } from "react";
 const Tabs = ({tabs}) => {
 //   console.log(tabs);
 const [list,setList] = useState(tabs)
-const [content1 , setContent1] = useState("");
-const [content2 , setContent2] = useState("");
+const [content1 , setContent1] = useState(tabs[0][0].content);
+const [content2 , setContent2] = useState(tabs[1][0].content);
 
 // console.log(list);
 return ( <div>
